@@ -1,0 +1,27 @@
+{
+  "name": "appoloserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Abdelhedi hlel",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.2.6",
+    "dotenv": "^6.1.0",
+    "graphql": "^14.0.2",
+    "mongoose": "^5.3.14",
+    "nodemon": "^1.18.7"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}

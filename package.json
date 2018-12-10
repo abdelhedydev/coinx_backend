@@ -1,27 +1,29 @@
 {
-  "name": "appoloserver",
+  "name": "apollo-server-training",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client": "cd ../react-training/ && npm start",
+    "server": "nodemon server.js",
+    "start": "concurrently \"nodemon server.js\"  \"npm run client \""
   },
   "keywords": [],
-  "author": "Abdelhedi hlel",
+  "author": "Abdelhedi",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.2.6",
-    "dotenv": "^6.1.0",
+    "apollo-server": "^2.2.5",
+    "bcrypt": "^3.0.2",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
     "graphql": "^14.0.2",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-tools": "^4.0.3",
+    "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.3.14",
-    "nodemon": "^1.18.7"
-  },
-  "devDependencies": {
-    "eslint": "^5.9.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "nodemon": "^1.18.7",
+    "promise": "^8.0.2",
+    "shortid": "^2.2.14"
   }
 }
